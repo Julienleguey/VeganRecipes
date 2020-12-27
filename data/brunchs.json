@@ -1,0 +1,136 @@
+[
+  {
+    "name": "Pancakes super moelleux",
+    "author": "Marie Laforêt",
+    "quantity": "Pour 8 à 10 pancakes",
+    "ingredientsLists": [
+      {
+        "title": "",
+        "ingredients": [
+          "250 g de farine de blé",
+          "1 sachet de poudre à lever",
+          "1 pincée de sel",
+          "3 càs. de sucre blond en poudre",
+          "1 sachet de sucre vanillé",
+          "300 ml de lait végétal au choix",
+          "4 càs. d'huile neutre + un peu pour la cuisson"
+        ]
+      }
+    ],
+    "preparation": [
+      {
+        "title": "",
+        "instructions": [
+          "Dans un saladier, mélanger la farine avec la poudre à lever, la pincée de sel et le sucre. Ajouter le lait et l'huile, et bien mélanger la pâte à l'aide d'un fouet, pour obtenir une texture homogène et sans grumeaux.",
+          "Huiler au pinceau une poêle à crêpe et porter à feu moyen/vif. Verser 1/2 louche de pâte au centre de la poêle.",
+          "Quand les bords du pancake commencent à sécher en surface, le retourner. Si le dessous est trop brun, réduire la puissance du feu. Cuire 10 à 20 secondes sur l'autre face qui doit être dorée. Procéder pour tous les pancakes selon la même méthode."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Banana Bread",
+    "author": "Marie Laforêt",
+    "quantity": "Pour 1 cake (10 à 12 parts)",
+    "ingredientsLists": [
+      {
+        "title": "",
+        "ingredients": [
+          "3 bananes bien mûres",
+          "4 càs d'huile neutre",
+          "100g de sucre en pouvre au choix",
+          "8 càs de lait végétal au choix",
+          "1/4 de càc de cannelle moulue",
+          "1 sachet de poudre à lever",
+          "275g de farine de blé",
+          "1/4 de càc de sel"
+        ]
+      },
+      {
+        "title": "Pour le décor",
+        "ingredients": ["1 banane", "1 càs de sucre blond en poudre"]
+      }
+    ],
+    "preparation": [
+      {
+        "title": "",
+        "instructions": [
+          "Eplucher et couper les bananes en morceaux. Dans un saladier, disposer les morceaux de banane et verser l'huile. Ecraser à la fourchette pour obtenir un mélange le plus lisse possible (il peut rester quelque grumeaux).",
+          "Ajouter le sucre et mélanger à l'aide d'un fouet pour faire blanchir le mélange. Verser le lait végétal et mélanger toujours à l'aide d'un fouet. Mélanger ensemble dans un saladier tous les ingrédients secs et verser petit à petit dans le mélange humide, toujours à l'aide d'un fouet. Chemiser un moule à cake de papier cuisson ou le huiler selon vos préférences. Verser la pâte dans le moule.",
+          "Pour le décor, couper la banane en deux dans la longueur et disposer les deux moitiés le long du cake avec le sucre.",
+          "Enfourner et cuire à 180°C (th. 6) pendant 30 minutes. Vérifier la cuisson du banana bread en plantant délicatement la lame d'un couteau pointu au centre. Si elle resort sèche, le cake est cuit. Sinon prolonger la cuisson par tranches de 5 minutes."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Oatshake à la banane",
+    "author": "Marie Laforêt",
+    "quantity": "Pour 50cl (2 verres)",
+    "ingredientsLists": [
+      {
+        "title": "",
+        "ingredients": [
+          "1 banane",
+          "6 càs. de flocons d'avoine",
+          "300 ml d'eau",
+          "1 yaourt de soja nature",
+          "2 càs. de sucre blond en poudre (ou moins selon le goût)"
+        ]
+      }
+    ],
+    "preparation": [
+      {
+        "title": "",
+        "instructions": [
+          "Eplucher la banane et la couper en morceaux. Placer dans le bol d'un blender ou d'un mixeur plongeant. Ajouter les flocons d'avoine, l'eau et mixer.",
+          "Ajouter le yaourt et 1 cuillerée à soupe de sucre.",
+          "Mixer et goûter, ajouter le sucre restant si vous préférez un goût plus sucré."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Baked beans et hash brown",
+    "author": "Marie Laforêt",
+    "quantity": "Pour 2 à 4 personnes",
+    "ingredientsLists": [
+      {
+        "title": "Pour les hash browns",
+        "ingredients": [
+          "500 g de pommes de terre ferme",
+          "1,5 càs. d'huile neutre",
+          "sel, poivre"
+        ]
+      },
+      {
+        "title": "Pour les baked beans",
+        "ingredients": [
+          "1 petit oignon",
+          "1 gousse d'ail",
+          "1 càs. d'huile d'olive",
+          "1/4 de càc. de paprika fumé moulu",
+          "250 g de haricots blancs cuits (ou une petite boîte de conserve)",
+          "2 càs. de sucre en poudre (au choix)",
+          "8 càs. de coulis de tomates",
+          "1 càs. de sauce soja",
+          "1/2 càc. de vinaigre de cidre"
+        ]
+      }
+    ],
+    "preparation": [
+      {
+        "title": "Pour les hash browns",
+        "instructions": [
+          "Eplucher les pommes de terre et les râter à l'aide d'une grosse râpe. Les déposer dans une passoire fine, bien les rincer et les presser dans une torchon propre pour absorber l'eau. Dans une poêle, chauffer l'huile à feu vif et, y ajouter les pommes de terre et cuire en mélangeant régulièrement jusqu'à ce que les pommes de terre soient bien dorées. Saler et poivrer selon le goût."
+        ]
+      },
+      {
+        "title": "Pour les baked beans",
+        "instructions": [
+          "Eplucher et hacher finement l'oignon et l'ail. Dans une poêle moyenne, chauffer l'huile d'olive à feu moyen/vif, y faire revenir l'oignon avec le paprika fumé pendant quelques minutes. Ajouter les haricots (bien rincés et égouttés), le sucre et l'ail, et cuire quelques minutes de nouveau. Verser enfin le coulis de tomates, la sauce soja et le vinagre et laisser mijoter à feu moyen/doux pendant 5 bonnes minutes."
+        ]
+      }
+    ]
+  }
+]
