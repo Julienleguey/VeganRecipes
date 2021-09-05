@@ -27,10 +27,12 @@ function PreparationScreen() {
     const firstWord = instruction.substring(0, index);
     const rest = instruction.substring(index);
 
-    return [
-      <Text style={styles.firstWord}>{firstWord}</Text>,
-      <Text>{rest}</Text>,
-    ];
+    return (
+      <Text>
+        <Text style={styles.firstWord}>{firstWord}</Text>
+        {rest}
+      </Text>
+    );
   };
 
   return <ScrollView style={styles.container}>{displaySections()}</ScrollView>;

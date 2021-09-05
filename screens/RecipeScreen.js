@@ -1,6 +1,10 @@
 import React, {useEffect} from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {
+  activateKeepAwake,
+  deactivateKeepAwake,
+} from '@sayem314/react-native-keep-awake';
 import {RecipeContext} from './RecipeContext';
 import IngredientsTab from './tabs/IngredientsTab';
 import PreparationTab from './tabs/PreparationTab';
@@ -11,9 +15,9 @@ const Tab = createBottomTabNavigator();
 
 function RecipeScreen({navigation, route}) {
   useEffect(() => {
-    console.log('mounting');
+    activateKeepAwake();
 
-    return () => console.log('unmounting');
+    return () => deactivateKeepAwake();
   });
 
   return (
@@ -23,9 +27,10 @@ function RecipeScreen({navigation, route}) {
       }}>
       <RecipeContext.Provider value={route.params.recipe}>
         <Tab.Navigator
-          tabBarOptions={{
-            activeTintColor: 'tomato',
-            inactiveTintColor: 'gray',
+          screenOptions={{
+            tabBarActiveTintColor: 'tomato',
+            tabBarInactiveTintColor: 'gray',
+            headerShown: false,
           }}>
           <Tab.Screen
             name="Ingredients"

@@ -11,22 +11,31 @@ import {
   View,
 } from 'react-native';
 
-function HomeScreen({navigation, sectionName, data}) {
+function RecipesSection({navigation, sectionName, data}) {
   const [open, setOpen] = useState(false);
 
-  const renderItem = ({item, index}) => (
-    <TouchableOpacity
-      onPress={() =>
-        navigation.navigate('Recipe', {
-          name: item.name,
-          recipe: item,
-        })
-      }>
-      <View style={styles.recipeContainer}>
-        <Text style={styles.recipeName}>{item.name}</Text>
-      </View>
-    </TouchableOpacity>
-  );
+  const renderItem = (item, index) => {
+    return (
+      <TouchableOpacity
+        onPress={() =>
+          navigation.navigate('Recipe', {
+            name: item.name,
+            recipe: item,
+          })
+        }
+        key={index}>
+        <View style={styles.recipeContainer}>
+          <Text style={styles.recipeName}>{item.name}</Text>
+        </View>
+      </TouchableOpacity>
+    );
+  };
+
+  const renderItems = () => {
+    return data.map((item, index) => {
+      return renderItem(item, index);
+    });
+  };
 
   return (
     <View style={styles.sectionContainer}>
@@ -42,14 +51,7 @@ function HomeScreen({navigation, sectionName, data}) {
           />
         </View>
       </TouchableWithoutFeedback>
-      <FlatList
-        data={data}
-        keyExtractor={(item) => item.name}
-        vertical
-        renderItem={renderItem}
-        ItemSeparatorComponent={() => <View style={{width: 8}} />}
-        style={{display: open ? 'flex' : 'none'}}
-      />
+      <View style={{display: open ? 'flex' : 'none'}}>{renderItems()}</View>
     </View>
   );
 }
@@ -73,7 +75,7 @@ const styles = StyleSheet.create({
     height: 24,
   },
   recipeContainer: {
-    marginTop: 4,
+    marginTop: 8,
     paddingVertical: 4,
     paddingLeft: 16,
     borderWidth: 2,
@@ -86,4 +88,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HomeScreen;
+export default RecipesSection;
