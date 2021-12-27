@@ -1,10 +1,12 @@
 module.exports = {
   root: true,
-  extends: "@react-native-community",
+  extends: ["@react-native-community", "airbnb"],
+  parser: "babel-eslint",
   plugins: ["react", "react-native"],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
+      classes: true,
     },
   },
   env: {
@@ -12,6 +14,7 @@ module.exports = {
   },
   rules: {
     quotes: "off",
+    "react/jsx-filename-extension": ["error", { extensions: [".js", ".jsx"] }],
     "prettier/prettier": "off",
     "react-native/no-unused-styles": "warn",
     "react-native/split-platform-components": "warn",
@@ -19,5 +22,6 @@ module.exports = {
     "react-native/no-color-literals": "off",
     "react-native/no-raw-text": "warn",
     "react-native/no-single-element-style-arrays": "warn",
+    "react/prop-types": "off",
   },
 };

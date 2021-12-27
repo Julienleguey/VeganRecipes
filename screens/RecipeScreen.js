@@ -5,7 +5,7 @@ import {
   activateKeepAwake,
   deactivateKeepAwake,
 } from "@sayem314/react-native-keep-awake";
-import { RecipeContext } from "./RecipeContext";
+import RecipeContext from "./RecipeContext";
 import IngredientsTab from "./tabs/IngredientsTab";
 import PreparationTab from "./tabs/PreparationTab";
 import Grocery from "../assets/grocery.svg";
@@ -38,6 +38,7 @@ function RecipeScreen({ route }) {
             name="Ingredients"
             component={IngredientsTab}
             options={{
+              // eslint-disable-next-line react/no-unstable-nested-components, no-unused-vars
               tabBarIcon: ({ focused, color, size }) => (
                 <Grocery width={32} height={32} />
               ),
@@ -47,6 +48,7 @@ function RecipeScreen({ route }) {
             name="Preparation"
             component={PreparationTab}
             options={{
+              // eslint-disable-next-line react/no-unstable-nested-components, no-unused-vars
               tabBarIcon: ({ focused, color, size }) => (
                 <Cooking width={32} height={32} />
               ),

@@ -1,5 +1,6 @@
+/* eslint-disable global-require */
+
 function imageRecipe(name) {
-  console.log("inside imageRecipe");
   switch (name) {
     case "Cake aux olives et tomates séchées":
       return require("./pictures/starters/01.png");
