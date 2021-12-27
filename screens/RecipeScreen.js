@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {Image, StyleSheet, Text, View} from 'react-native';
+import {View} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {
   activateKeepAwake,
@@ -13,7 +13,7 @@ import Cooking from '../assets/cooking.svg';
 
 const Tab = createBottomTabNavigator();
 
-function RecipeScreen({navigation, route}) {
+function RecipeScreen({route}) {
   useEffect(() => {
     activateKeepAwake();
 
@@ -55,16 +55,5 @@ function RecipeScreen({navigation, route}) {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  tabImgContainer: {
-    width: 32,
-    height: 32,
-  },
-  tabImg: {
-    width: '100%',
-    height: '100%',
-  },
-});
 
 export default RecipeScreen;

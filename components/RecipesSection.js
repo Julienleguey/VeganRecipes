@@ -1,9 +1,6 @@
 import React, {useState} from 'react';
 import {
   Image,
-  FlatList,
-  Platform,
-  SafeAreaView,
   StyleSheet,
   Text,
   TouchableOpacity,

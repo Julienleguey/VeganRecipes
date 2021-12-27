@@ -1,15 +1,5 @@
-import React, {useState} from 'react';
-import {
-  Image,
-  FlatList,
-  Platform,
-  SafeAreaView,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  TouchableWithoutFeedback,
-} from 'react-native';
+import React from 'react';
+import {ScrollView, StyleSheet} from 'react-native';
 import brunchs from '../data/brunchs.json';
 import dips from '../data/dips.json';
 import mains from '../data/mains.json';

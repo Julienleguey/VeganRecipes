@@ -13,14 +13,14 @@ function IngredientsScreen() {
     ));
   };
 
-  const displayList = (list) => (
+  const displayList = list => (
     <View>
       {list.title ? <Text style={styles.title}>{list.title}</Text> : null}
       {displayIngredients(list.ingredients)}
     </View>
   );
 
-  const displayIngredients = (ingredients) => {
+  const displayIngredients = ingredients => {
     return ingredients.map((ingredient, index) => (
       <Text key={index} style={styles.text}>
         {'\u2022'} {ingredient}
