@@ -1,6 +1,6 @@
 name: Lint
 
-on: [push]
+# on: [push]
   # Trigger the workflow on push or pull request,
   # but only for the main branch
 # on:
@@ -10,6 +10,13 @@ on: [push]
   # pull_request:
   #   branches:
   #     - main
+on:
+  push:
+    # Run against main branch only.
+    branches: [main]
+  pull_request:
+    # Include events emitted on code change only.
+    types: [opened, synchronize]
 
 jobs:
   run-linters:
@@ -30,7 +37,4 @@ jobs:
         run: npm ci
 
       - name: Run linters
-        # uses: wearerequired/lint-action@v1
         run: npm run lint
-        # with:
-        #   eslint: true
