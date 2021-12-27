@@ -1,29 +1,29 @@
-import React from 'react';
-import {ScrollView, StyleSheet, Text, View} from 'react-native';
-import {RecipeContext} from '../RecipeContext';
+import React from "react";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
+import { RecipeContext } from "../RecipeContext";
 
 function IngredientsScreen() {
   const recipe = React.useContext(RecipeContext);
 
   const displayLists = () => {
     return recipe.ingredientsLists.map((list, index) => (
-      <View key={index} style={{paddingBottom: 24}}>
+      <View key={index} style={{ paddingBottom: 24 }}>
         {displayList(list)}
       </View>
     ));
   };
 
-  const displayList = list => (
+  const displayList = (list) => (
     <View>
       {list.title ? <Text style={styles.title}>{list.title}</Text> : null}
       {displayIngredients(list.ingredients)}
     </View>
   );
 
-  const displayIngredients = ingredients => {
+  const displayIngredients = (ingredients) => {
     return ingredients.map((ingredient, index) => (
       <Text key={index} style={styles.text}>
-        {'\u2022'} {ingredient}
+        {"\u2022"} {ingredient}
       </Text>
     ));
   };
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 24,
-    textDecorationLine: 'underline',
+    textDecorationLine: "underline",
     marginBottom: 4,
   },
   text: {

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
 import {
   Image,
   StyleSheet,
@@ -6,21 +6,22 @@ import {
   TouchableOpacity,
   TouchableWithoutFeedback,
   View,
-} from 'react-native';
+} from "react-native";
 
-function RecipesSection({navigation, sectionName, data}) {
+function RecipesSection({ navigation, sectionName, data }) {
   const [open, setOpen] = useState(false);
 
   const renderItem = (item, index) => {
     return (
       <TouchableOpacity
         onPress={() =>
-          navigation.navigate('Recipe', {
+          navigation.navigate("Recipe", {
             name: item.name,
             recipe: item,
           })
         }
-        key={index}>
+        key={index}
+      >
         <View style={styles.recipeContainer}>
           <Text style={styles.recipeName}>{item.name}</Text>
         </View>
@@ -40,15 +41,15 @@ function RecipesSection({navigation, sectionName, data}) {
         <View style={styles.sectionButton}>
           <Text style={styles.sectionTitle}>{sectionName}</Text>
           <Image
-            source={require('../assets/arrow.png')}
+            source={require("../assets/arrow.png")}
             style={[
               styles.arrow,
-              {transform: [{rotate: open ? '180 deg' : '0 deg'}]},
+              { transform: [{ rotate: open ? "180 deg" : "0 deg" }] },
             ]}
           />
         </View>
       </TouchableWithoutFeedback>
-      <View style={{display: open ? 'flex' : 'none'}}>{renderItems()}</View>
+      <View style={{ display: open ? "flex" : "none" }}>{renderItems()}</View>
     </View>
   );
 }
@@ -58,10 +59,10 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   sectionButton: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    backgroundColor: 'lightgray',
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    backgroundColor: "lightgray",
     paddingHorizontal: 8,
   },
   sectionTitle: {
@@ -76,9 +77,9 @@ const styles = StyleSheet.create({
     paddingVertical: 4,
     paddingLeft: 16,
     borderWidth: 2,
-    borderColor: 'lightgray',
+    borderColor: "lightgray",
     borderRadius: 1,
-    borderStyle: 'dashed',
+    borderStyle: "dashed",
   },
   recipeName: {
     fontSize: 18,

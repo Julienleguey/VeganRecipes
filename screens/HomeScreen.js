@@ -1,12 +1,12 @@
-import React from 'react';
-import {ScrollView, StyleSheet} from 'react-native';
-import brunchs from '../data/brunchs.json';
-import dips from '../data/dips.json';
-import mains from '../data/mains.json';
-import soups from '../data/soups.json';
-import RecipesSection from '../components/RecipesSection';
+import React from "react";
+import { ScrollView, StyleSheet } from "react-native";
+import brunchs from "../data/brunchs.json";
+import dips from "../data/dips.json";
+import mains from "../data/mains.json";
+import soups from "../data/soups.json";
+import RecipesSection from "../components/RecipesSection";
 
-function HomeScreen({navigation}) {
+function HomeScreen({ navigation }) {
   return (
     <ScrollView style={styles.container}>
       <RecipesSection

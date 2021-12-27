@@ -1,6 +1,6 @@
-import React from 'react';
-import {ScrollView, StyleSheet, Text, View} from 'react-native';
-import {RecipeContext} from '../RecipeContext';
+import React from "react";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
+import { RecipeContext } from "../RecipeContext";
 
 function PreparationScreen() {
   const recipe = React.useContext(RecipeContext);
@@ -14,7 +14,7 @@ function PreparationScreen() {
     ));
   };
 
-  const displayInstructions = instructions => {
+  const displayInstructions = (instructions) => {
     return instructions.map((instruction, index) => (
       <Text key={index} style={styles.text}>
         {displayInstruction(instruction)}
@@ -22,8 +22,8 @@ function PreparationScreen() {
     ));
   };
 
-  const displayInstruction = instruction => {
-    const index = instruction.indexOf(' ');
+  const displayInstruction = (instruction) => {
+    const index = instruction.indexOf(" ");
     const firstWord = instruction.substring(0, index);
     const rest = instruction.substring(index);
 
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     lineHeight: 26,
   },
   firstWord: {
-    fontWeight: '700',
+    fontWeight: "700",
   },
 });
 
