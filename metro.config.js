@@ -5,6 +5,7 @@
  * @format
  */
 
+// eslint-disable-next-line import/no-extraneous-dependencies
 const { getDefaultConfig } = require("metro-config");
 
 module.exports = (async () => {
